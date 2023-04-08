@@ -13,12 +13,14 @@
 }
 
 .center{
-    width: 1200px;
+    /* padrão em todos os centers */
+    max-width: 1280px;
+    width: 100%;
     margin: 0 auto;
 }
 
-.header { 
-    min-width: 1200px;
+.header {
+    padding: 0 2%;
     width: 100%;
     height: 90px;
     background-color: #212343;
@@ -26,13 +28,13 @@
 
 /* logo */
 .header img {
-    
+
     width: 300px;
     margin: -10px;
 }
 
 .container-banner {
-    min-width: 1200px;
+    padding: 0 2%;
     width: 100%;
     height: 557px;
     background-image: url(img/ima6.jpg);
@@ -116,18 +118,18 @@
 }
 
 .container-2 {
-    min-width: 1200px;
     color: white;
-    padding: 40px 0;
-    text-align: center; 
+    padding: 40px 2%;
+    text-align: center;
     background-color: #053153f1;
 }
- 
+
 .container-2 p{
-    width: 700px;
+    width: 100%;
     margin: 15px 0;
     display: inline-block;
     text-align: justify;
+    max-width: 700px;
 }
 
 .arrow {
@@ -142,10 +144,9 @@
 }
 
 .section-1 {
-    min-width: 1200px;
-    padding: 60px 0;
+    padding: 60px 2%;
     background-color: #d1d4f8b7;
-    
+
 }
 
 .section-1 h2 {
@@ -160,7 +161,7 @@
 
 /* float */
 .container-single {
-    float: left;   
+    float: left;
     width: 33.333%;
     padding: 30px;
 }
@@ -170,10 +171,79 @@
 }
 
 .footer {
-    min-width: 1200px;
     border-top: 3px solid #27284dd3;
     padding: 30px 0;
     text-align: center;
     background-color: #363a6d;
     color: white;
+
+}
+
+/* responsivo */
+
+@media screen and (max-width: 1024px){
+    .header{
+        height: auto;
+        width: 100%;
+        padding: 15px 0;
+        text-align: center;
+    }
+}
+
+.header img{
+    margin: 0;
+}
+
+.container-list{
+    padding: 30px 10px;
+    width: 40%;
+    float: left;
+    display: inline-block;
+    height: auto;
+    max-width: 400px;
+    text-align: justify;
+    
+}
+
+.container-banner{ /* mexeu nas dimensões do forme */
+
+    width: 100%;
+    padding: 30px 2%;
+    height: outo;
+    text-align: center;
+}
+
+.form{
+    max-width: 400px;
+    padding: 10px;
+    width: 60%;
+    height: 100%;
+    float: right;
+    top: 0;
+}
+
+.input-container input[type=text]{
+    width: 100%;
+    height: 27px ;
+}
+
+.form input[type=submit]{
+    max-width: 280px;
+    height: 55px;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .container-list{
+        margin-top: 0;
+        float: none;
+        display: inline-block;
+        width: 100%;
+    }
+    .form{
+        float: none;
+        display: inline-block;
+        width: 90%;
+        margin-top: 30px;
+    }
 }
