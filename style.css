@@ -1,7 +1,7 @@
 /* Importação (Google Fonts) */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,7 +12,7 @@
     clear: both;
 }
 
-.center{
+.center {
     /* padrão em todos os centers */
     max-width: 1280px;
     width: 100%;
@@ -45,7 +45,7 @@
 .form {
     padding: 20px;
     width: 400px;
-    height: calc(100% + 30px) ;
+    height: calc(100% + 30px);
     position: relative;
     top: -15px;
     background-color: rgba(144, 178, 247, 0.856);
@@ -57,7 +57,7 @@
     text-align: center;
 }
 
-.input-container{
+.input-container {
     margin-top: 40px;
 }
 
@@ -95,7 +95,7 @@
     cursor: pointer;
 }
 
-.input-submit-container input:hover{
+.input-submit-container input:hover {
     background-color: #02244ba1;
 }
 
@@ -124,7 +124,7 @@
     background-color: #053153f1;
 }
 
-.container-2 p{
+.container-2 p {
     width: 100%;
     margin: 15px 0;
     display: inline-block;
@@ -155,7 +155,7 @@
 }
 
 .container-section {
-    margin: 40px ;
+    margin: 40px;
     text-align: center;
 }
 
@@ -166,7 +166,8 @@
     padding: 30px;
 }
 
-.container-single p{
+.container-single p {
+    display: inline-block;
     padding: 10px 25px;
 }
 
@@ -181,69 +182,114 @@
 
 /* responsivo */
 
-@media screen and (max-width: 1024px){
-    .header{
+@media screen and (max-width: 1024px) {
+    .header {
         height: auto;
         width: 100%;
         padding: 15px 0;
         text-align: center;
     }
-}
 
-.header img{
-    margin: 0;
-}
 
-.container-list{
-    padding: 30px 10px;
-    width: 40%;
-    float: left;
-    display: inline-block;
-    height: auto;
-    max-width: 400px;
-    text-align: justify;
-    
-}
+    .header img {
+        margin: 0;
+    }
 
-.container-banner{ /* mexeu nas dimensões do forme */
-
-    width: 100%;
-    padding: 30px 2%;
-    height: outo;
-    text-align: center;
-}
-
-.form{
-    max-width: 400px;
-    padding: 10px;
-    width: 60%;
-    height: 100%;
-    float: right;
-    top: 0;
-}
-
-.input-container input[type=text]{
-    width: 100%;
-    height: 27px ;
-}
-
-.form input[type=submit]{
-    max-width: 280px;
-    height: 55px;
-    width: 100%;
-}
-
-@media screen and (max-width: 768px) {
-    .container-list{
-        margin-top: 0;
-        float: none;
+    .container-list {
+        padding: 30px 0;
+        width: 40%;
+        float: left;
         display: inline-block;
+        height: auto;
+        max-width: 400px;
+        text-align: justify;
+
+    }
+
+    .container-banner {
+        /* mexeu nas dimensões do forme */
+
+        width: 100%;
+        padding: 30px 2%;
+        height: auto;
+        text-align: center;
+    }
+
+    .form {
+        max-width: 400px;
+        padding: 10px;
+        width: 60%;
+        height: 100%;
+        float: right;
+        top: 0;
+    }
+
+    .input-container input[type=text] {
+        width: 100%;
+        height: 27px;
+    }
+
+    .form input[type=submit] {
+        max-width: 280px;
+        height: 55px;
         width: 100%;
     }
-    .form{
-        float: none;
-        display: inline-block;
-        width: 90%;
-        margin-top: 30px;
-    }
 }
+
+@media screen and (max-width: 768px){
+	.container-2{
+		padding-right: 4%;
+		padding-left: 4%;
+        
+	}
+	.container-list{
+		margin-top: 0;
+		float: none;
+		display: inline-block;
+		width: 100%;
+	}
+
+	.form{
+		float: none;
+		display: inline-block;
+		width: 90%;
+		margin-top:30px;
+	}
+
+	.container-single{
+		float: none;
+		display: inline-block;
+		width: 100%;
+		max-width: 600px;
+		padding:30px 0;
+	}
+}
+
+/* TESTE DE SMARTPHONE LANDSCAPE */
+
+@media screen and (max-width: 667px) {
+    .container-list{
+		margin-top: 0;
+		float: none;
+		display: inline-block;
+		width: 100%;
+	}
+
+	.form{
+		float: none;
+		display: inline-block;
+		width: 90%;
+        height: auto;
+		margin-top:30px;
+	}
+
+	.container-single{
+		float: none;
+		display: inline-block;
+		width: 100%;
+		max-width: 600px;
+		padding:30px 0;
+	}
+}
+
+
